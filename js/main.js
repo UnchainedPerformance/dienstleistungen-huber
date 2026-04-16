@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initNavigation();
   initCounterAnimation();
   initFaqAccordion();
+  initProcessTimeline();
 });
 
 /* ============================================
@@ -131,4 +132,29 @@ function initFaqAccordion() {
       }
     });
   });
+}
+
+/* ============================================
+   PROCESS TIMELINE ANIMATION
+   ============================================ */
+function initProcessTimeline() {
+  const timeline = document.querySelector('.process__timeline');
+  if (!timeline) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Small delay so reveal animations start first, then line draws
+        setTimeout(() => {
+          timeline.classList.add('animate');
+        }, 300);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.2,
+    rootMargin: '0px 0px -60px 0px'
+  });
+
+  observer.observe(timeline);
 }

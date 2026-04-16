@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="images/favicon-512.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="images/favicon-192.png">
   <title>Karriere – Dienstleistungen Huber | Jobs in Forst, Garten & Landschaftspflege</title>
   <meta name="description" content="Karriere bei Dienstleistungen Huber: Aktuelle Stellenangebote in der Forstwirtschaft, im Gartenbau und in der Landschaftspflege. Jetzt bewerben!">
   <meta property="og:title" content="Karriere – Dienstleistungen Huber">
@@ -12,7 +16,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&display=swap" rel="stylesheet">
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/style.css">
@@ -24,18 +28,17 @@
        ============================================ -->
   <nav class="nav" id="nav">
     <div class="container nav__inner">
-      <a href="index.html" class="nav__logo">
-        <img src="images/logo.png" alt="Dienstleistungen Huber Logo">
-        <span>Huber</span>
+      <a class='nav__logo' href='/'>
+        <img src="images/logo-transparent.png" alt="Dienstleistungen Huber Logo">
       </a>
       <ul class="nav__links" id="navLinks">
-        <li><a href="index.html">Startseite</a></li>
-        <li><a href="leistungen.html">Leistungen</a></li>
-        <li><a href="ueber-uns.html">Über uns</a></li>
-        <li><a href="karriere.html" class="active">Karriere</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href='/'>Startseite</a></li>
+        <li><a href='/leistungen'>Leistungen</a></li>
+        <li><a href='/ueber-uns'>Über uns</a></li>
+        <li><a class='active' href='/karriere'>Karriere</a></li>
+        <li><a href='/kontakt'>Kontakt</a></li>
       </ul>
-      <a href="kontakt.html" class="btn btn--primary nav__cta">
+      <a class='btn btn--primary nav__cta' href='/kontakt'>
         Kostenlose Beratung
         <svg class="arrow-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 10h10M11 6l4 4-4 4"/></svg>
       </a>
@@ -61,7 +64,7 @@
   <section class="career-intro">
     <div class="container reveal">
       <h2>Arbeiten bei Dienstleistungen Huber</h2>
-      <p>Du liebst die Arbeit in der Natur und suchst einen abwechslungsreichen Job? Bei uns arbeitest du mit modernen Maschinen in einem erfahrenen und motivierten Team. Seit 1968 stehen wir für Qualität in der Forstwirtschaft, im Gartenbau und in der Landschaftspflege. Werde Teil unserer Erfolgsgeschichte und gestalte die Natur mit uns gemeinsam.</p>
+      <p>Du liebst die Arbeit in der Natur und suchst einen abwechslungsreichen Job? Bei uns arbeitest du mit modernen Maschinen in einem erfahrenen und motivierten Team. Seit 1969 stehen wir für Qualität in der Forstwirtschaft, im Gartenbau und in der Landschaftspflege. Werde Teil unserer Erfolgsgeschichte und gestalte die Natur mit uns gemeinsam.</p>
     </div>
   </section>
 
@@ -123,7 +126,7 @@
           <span class="job-card__badge">Vollzeit</span>
           <h3>Garten- und Landschaftsbauer (m/w/d)</h3>
           <p>Alle Tätigkeiten im Garten- und Landschaftsbau sowie in der Landschaftspflege. Von der Gartengestaltung über Pflanzarbeiten bis hin zu Bagger- und Erdarbeiten.</p>
-          <a href="karriere-gartenbauer.html" class="btn btn--primary">
+          <a class='btn btn--primary' href='/karriere-gartenbauer'>
             Jetzt bewerben
             <svg class="arrow-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 10h10M11 6l4 4-4 4"/></svg>
           </a>
@@ -133,7 +136,7 @@
           <span class="job-card__badge">Vollzeit</span>
           <h3>Forstwirt (m/w/d)</h3>
           <p>Alle forstwirtschaftlichen Tätigkeiten rund um die Holzernte, Holzeinschlag und Jungbestandspflege. Arbeit mit modernen Forstspezialmaschinen HSM 904Z.</p>
-          <a href="karriere-forstwirt.html" class="btn btn--primary">
+          <a class='btn btn--primary' href='/karriere-forstwirt'>
             Jetzt bewerben
             <svg class="arrow-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 10h10M11 6l4 4-4 4"/></svg>
           </a>
@@ -151,33 +154,13 @@
       <h2>Jetzt bewerben</h2>
       <p>Wähle oben eine Stelle aus und bewirb dich in nur 2 Minuten – ohne Lebenslauf, ohne Anschreiben.</p>
       <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: var(--space-lg);">
-        <a href="karriere-gartenbauer.html" class="btn btn--primary">
+        <a class='btn btn--primary' href='/karriere-gartenbauer'>
           Gartenbauer bewerben
           <svg class="arrow-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 10h10M11 6l4 4-4 4"/></svg>
         </a>
-        <a href="karriere-forstwirt.html" class="btn btn--primary">
+        <a class='btn btn--primary' href='/karriere-forstwirt'>
           Forstwirt bewerben
           <svg class="arrow-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 10h10M11 6l4 4-4 4"/></svg>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================
-       CTA SECTION
-       ============================================ -->
-  <section class="cta-section">
-    <div class="container reveal">
-      <span class="section-label" style="color: var(--accent);">Kontakt</span>
-      <h2>Sprechen Sie mit uns über Ihr Projekt</h2>
-      <p>Ob Forstarbeit, Gartengestaltung oder Landschaftspflege – wir beraten Sie gerne persönlich und unverbindlich.</p>
-      <div class="cta-section__buttons">
-        <a href="kontakt.html" class="btn btn--primary">
-          Kostenlose Beratung anfordern
-          <svg class="arrow-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 10h10M11 6l4 4-4 4"/></svg>
-        </a>
-        <a href="tel:+491741839928" class="btn btn--outline-light">
-          +49 174 1839928 anrufen
         </a>
       </div>
     </div>
@@ -191,11 +174,10 @@
       <div class="footer__inner">
 
         <div class="footer__brand">
-          <a href="index.html" class="nav__logo">
-            <img src="images/logo.png" alt="Dienstleistungen Huber Logo">
-            <span>Huber</span>
+          <a class='nav__logo' href='/'>
+            <img src="images/logo-transparent.png" alt="Dienstleistungen Huber Logo">
           </a>
-          <p>Forstwirtschaft, Gartenbau und Landschaftspflege aus einer Hand. Seit 1968 Ihr zuverlässiger Partner in Pfrondorf.</p>
+          <p>Forstwirtschaft, Gartenbau und Landschaftspflege aus einer Hand. Seit 1969 Ihr zuverlässiger Partner – ansässig in Pfrondorf.</p>
           <div class="footer__social">
             <a href="https://www.instagram.com/huber_naturdienstleistungen" target="_blank" rel="noopener" aria-label="Instagram">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
@@ -206,20 +188,20 @@
         <div class="footer__col">
           <h4>Quicklinks</h4>
           <ul>
-            <li><a href="index.html">Startseite</a></li>
-            <li><a href="leistungen.html">Leistungen</a></li>
-            <li><a href="ueber-uns.html">Über uns</a></li>
-            <li><a href="karriere.html">Karriere</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href='/'>Startseite</a></li>
+            <li><a href='/leistungen'>Leistungen</a></li>
+            <li><a href='/ueber-uns'>Über uns</a></li>
+            <li><a href='/karriere'>Karriere</a></li>
+            <li><a href='/kontakt'>Kontakt</a></li>
           </ul>
         </div>
 
         <div class="footer__col">
           <h4>Leistungen</h4>
           <ul>
-            <li><a href="leistungen.html#forstwirtschaft">Forstwirtschaft</a></li>
-            <li><a href="leistungen.html#gartenbau">Gartenbau</a></li>
-            <li><a href="leistungen.html#landschaftspflege">Landschaftspflege</a></li>
+            <li><a href='/leistungen#forstwirtschaft'>Forstwirtschaft</a></li>
+            <li><a href='/leistungen#gartenbau'>Gartenbau</a></li>
+            <li><a href='/leistungen#landschaftspflege'>Landschaftspflege</a></li>
           </ul>
         </div>
 
@@ -244,8 +226,8 @@
       <div class="footer__bottom">
         <p>&copy; 2026 Dienstleistungen Huber. Alle Rechte vorbehalten.</p>
         <div class="footer__legal">
-          <a href="impressum.html">Impressum</a>
-          <a href="datenschutz.html">Datenschutz</a>
+          <a href='/impressum'>Impressum</a>
+          <a href='/datenschutz'>Datenschutz</a>
         </div>
       </div>
     </div>
