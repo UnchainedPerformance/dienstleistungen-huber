@@ -247,6 +247,19 @@
       <span class="section-label" style="color: var(--accent);">Das sagt unser Team</span>
       <h2 class="rec-section__title" style="color: var(--text-light);">Stimmen aus dem <span class="accent-text">Team</span></h2>
 
+      <div class="rec-video">
+        <div class="video-wrapper">
+          <video preload="metadata" poster="videos/mitarbeiter-interview-poster.jpg" playsinline>
+            <source src="videos/mitarbeiter-interview-huber.mp4" type="video/mp4">
+            Ihr Browser unterstützt das Video-Format nicht.
+          </video>
+          <button class="video-play-btn" aria-label="Video abspielen" type="button">
+            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+        </div>
+      </div>
+      <p class="rec-video__caption">Echte Einblicke &mdash; direkt aus unserem Team.</p>
+
       <div class="rec-testimonials__grid">
         <div class="rec-testimonial">
           <div class="rec-testimonial__stars">
@@ -579,5 +592,6 @@
 
   <!-- Scripts -->
   <script src="js/recruiting.js"></script>
+  <script src="js/video-player.js"></script>
 </body>
 </html>

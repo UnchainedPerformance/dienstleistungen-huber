@@ -528,6 +528,32 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
 }
 
+/* === EMPLOYEE VIDEO (in Testimonials Section) === */
+.rec-video {
+  max-width: 800px;
+  margin: 0 auto var(--space-xl);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1px solid rgba(64, 243, 252, 0.25);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  background: #000;
+  aspect-ratio: 16 / 9;
+  position: relative;
+}
+.rec-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.rec-video__caption {
+  text-align: center;
+  font-size: 0.9375rem;
+  color: rgba(255, 255, 255, 0.55);
+  margin: calc(-1 * var(--space-md)) auto var(--space-xl);
+  max-width: 800px;
+}
+
 /* === FAQ === */
 .rec-faq__list {
   width: 100%;

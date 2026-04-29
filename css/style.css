@@ -1117,6 +1117,152 @@ p { font-size: 1.125rem; line-height: 1.75; }
 }
 
 /* ============================================
+   VIDEO PLAYER (Custom Play Button)
+   ============================================ */
+.video-wrapper {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+.video-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background: #000;
+}
+.video-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 92px;
+  height: 92px;
+  background: var(--accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 5;
+  transform: translate(-50%, -50%) scale(1);
+  transition: opacity 0.4s var(--ease), transform 0.4s var(--ease);
+  box-shadow: 0 8px 32px rgba(64, 243, 252, 0.4);
+}
+.video-play-btn::before,
+.video-play-btn::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  pointer-events: none;
+}
+.video-play-btn::before {
+  animation: video-play-pulse 2.4s ease-out infinite;
+}
+.video-play-btn::after {
+  animation: video-play-pulse 2.4s ease-out infinite;
+  animation-delay: 1.2s;
+}
+.video-play-btn svg {
+  width: 34px;
+  height: 34px;
+  fill: var(--bg-dark);
+  margin-left: 5px;
+  position: relative;
+  z-index: 2;
+}
+.video-wrapper:hover .video-play-btn {
+  transform: translate(-50%, -50%) scale(1.08);
+  background: var(--accent-light);
+}
+.video-wrapper.is-playing .video-play-btn {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.6);
+  pointer-events: none;
+}
+@keyframes video-play-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+@media (max-width: 640px) {
+  .video-play-btn {
+    width: 72px;
+    height: 72px;
+  }
+  .video-play-btn svg {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+/* ============================================
+   VIDEO SECTION (Homepage – GF Interview)
+   ============================================ */
+.video-section {
+  padding: var(--space-3xl) 0;
+  background: var(--bg-dark);
+  position: relative;
+  overflow: hidden;
+}
+.video-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 0%, rgba(64, 243, 252, 0.08), transparent 60%);
+  pointer-events: none;
+}
+.video-section__header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto var(--space-2xl);
+  position: relative;
+}
+.video-section__header h2 {
+  color: var(--text-light);
+  margin-bottom: var(--space-md);
+}
+.video-section__header p {
+  color: rgba(245, 245, 245, 0.7);
+  font-size: 1.125rem;
+}
+.video-section__player {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1px solid rgba(64, 243, 252, 0.25);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.04);
+  background: #000;
+  aspect-ratio: 16 / 9;
+}
+.video-section__player video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.video-section__caption {
+  text-align: center;
+  margin-top: var(--space-md);
+  font-size: 0.9375rem;
+  color: rgba(245, 245, 245, 0.55);
+  position: relative;
+}
+.video-section__caption strong {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* ============================================
    PAGE HEADER (for subpages)
    ============================================ */
 .page-header {
